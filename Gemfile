@@ -15,6 +15,9 @@ gem 'rails-controller-testing'
 gem 'bcrypt',         '3.1.12'
 # Buat sample-users hmm
 gem 'faker',          '1.7.3'
+# Buat upload image
+gem 'carrierwave',             '1.2.2'
+gem 'mini_magick',             '4.7.0'
 # Buat paginate hmm
 gem 'will_paginate',           '3.1.6'
 gem 'bootstrap-will_paginate', '1.0.0'
@@ -48,6 +51,11 @@ gem 'jbuilder', '~> 2.5'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.1.0', require: false
+
+group :production do
+  gem 'pg',  '0.20.0'
+  gem 'fog', '1.42'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
