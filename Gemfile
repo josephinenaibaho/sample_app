@@ -7,6 +7,8 @@ ruby '2.5.1'
 gem 'rails', '~> 5.2.2'
 # Bootstrap for layout
 gem 'bootstrap-sass', '3.3.7'
+# untuk boostrap jquery
+gem 'jquery-rails'
 # Untuk integration gituu
 gem 'rails-controller-testing'
 # Buat securing password kayanya sih
